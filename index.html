@@ -172,8 +172,15 @@
         </section>
         <section>
             <h3>Nyheter & tilbud</h3>
-            <form action="">
-                <p>påmeldingsskjema nyhetsbrev</p>
+            <form action="/submit-form">
+                <fieldset>
+                    <legend>Meld deg på nyhetsbrev her</legend>
+                    <label>
+                        E-post
+                        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no*">
+                    </label>
+                    <input type="submit" value="Send">
+                </fieldset>
             </form>
             <a href="#">Kjøp reisegavekort</a>
         </section>
