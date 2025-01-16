@@ -37,7 +37,7 @@
         </section>
         <section>
             <h2>bestillingsskjema</h2>
-            <form>
+            <form action="/submit-form">
                 <ul>
                     <li><a href="#"><i class="fa-solid fa-suitcase" title="koffert"></i> Fly + Hotell</a></li>
                     <li><a href="#"><i class="fa-solid fa-plane" title="fly"></i> Fly</a></li>
@@ -48,7 +48,7 @@
                 <fieldset>
                     <legend>Fra</legend>
                     <label for="fra">Fra</label>
-                    <select name="from" id="fra">
+                    <select name="fra" id="fra">
                         <option value="Osl">Oslo Lufthavn</option>
                         <option value="trf">Torp Sandefjord Lufthavn</option>
                         <option value="bgo">Bergen Lufthavn</option>
@@ -58,7 +58,7 @@
                 <fieldset>
                     <legend>Til</legend>
                     <label for="til">Til</label>
-                    <select name="to" id="til">
+                    <select name="til" id="til">
                         <option value="tia">Albania</option>
                         <option value="lpa">Gran Canaria</option>
                         <option value="aal">Danmark</option>
@@ -68,8 +68,8 @@
                 </fieldset>
                 <fieldset>
                     <legend>Reiselengde</legend>
-                    <label for="reiselenge">Reiselengde</label>
-                    <select name="duration" id="reiselengde">
+                    <label for="reiselengde">Reiselengde</label>
+                    <select name="reiselengde" id="reiselengde">
                         <option value="less-than-a-week">Mindre enn 1 uke</option>
                         <option value="1-week">1 Uke</option>
                         <option value="2-weeks">2 Uker</option>
@@ -79,12 +79,12 @@
                 <fieldset>
                     <legend>Velg dato</legend>
                     <label for="date">Dato</label>
-                    <input type="date" id="date" required>
+                    <input type="date" name="date" id="date" required>
                 </fieldset>
                 <fieldset>
                     <legend>Antall reisende</legend>
                     <label for="reisende">Antall reisende</label>
-                    <input type="number" id="reisende" required>
+                    <input type="number" name="reisende" id="reisende" required>
                 </fieldset>
                 <input type="submit" value="Søk">
             </form>
