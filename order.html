@@ -52,7 +52,7 @@
         <section>
             <h2>Oversikt</h2>
             <details id="mobile-view">
-                <summary>Dine valg <i class="fa-solid fa-chevron-right" title="arrow right"></summary>
+                <summary>Dine valg <i class="fa-solid fa-chevron-right" title="arrow right"></i></summary>
                     <img src="img/pool.jpg" alt="solseng ved basseng">
                     <h3>Parga Beach</h3>
                     <ul>
@@ -75,7 +75,7 @@
               </details>
               <div id="desktop-view">
                 <img src="img/pool.jpg" alt="solseng ved basseng">
-                    <h3>Parga Beach</h3>
+                <h3>Parga Beach</h3>
                     <ul>
                         <li><i class="fa-solid fa-sun" title="stjerne"></i></li>
                         <li><i class="fa-solid fa-sun" title="stjerne"></i></li>
@@ -96,7 +96,94 @@
               </div>
         </section>
         <section>
-            <h2>bestillingsskjema</h2>
+            <h2>Bestillingsskjema</h2>
+            <form action="/submit-form">
+                <fieldset>
+                    <legend>VOKSEN 18+ HOVEDBESTILLER</legend>
+                    <Label>
+                        FORNAVN (IFØLGE PASS):
+                        <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Fornavn*">
+                    </Label>
+                    <Label>
+                        ETTERNAVN (IFØLGE PASS):
+                        <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Etternavn*">
+                    </Label>
+                    <label for="date">
+                        FØDSELSDATO:
+                        <input type="number" placeholder="DD" id="date" inputmode="numeric" min="1" max="31" required>
+                    </label>
+                    <label for="month">
+                        MÅNED
+                        <input type="number" placeholder="MM" id="month" inputmode="numeric" min="1" max="12" required>
+                    </label>
+                    <label for="year">
+                        ÅR
+                        <input type="number" placeholder="ÅÅÅÅ" id="year" inputmode="numeric" min="1926" max="2007" required>
+                    </label>
+                    <h3>KJØNN</h3>
+                    <input type="radio" name="gender" id="kvinne">
+                    <label for="kvinne">KVINNE</label>
+                    <input type="radio" name="gender" id="mann">
+                    <label for="mann">MANN</label>
+                    <label>
+                        E-POSTADRESSE:
+                        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no*">
+                    </label>
+                    <label>
+                        TELEFONNUMMER:
+                        <input type="tel" pattern="[0-9]{8,12}" required placeholder="+4741***482*"> 
+                    </label>
+                    <Label>
+                        GATEADRESSE:
+                        <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Gateadresse*">
+                    </Label>
+                    <Label>
+                        POSTNUMMER:
+                        <input type="number"  required placeholder="Postnummer*">
+                    </Label>
+                    <Label>
+                        POSTSTED:
+                        <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Poststed*">
+                    </Label>
+                    <label for="land">LAND:</label>
+                    <select name="land" id="land">
+                        <option value="velg">Velg et land</option>
+                        <option value="no">Norge</option>
+                        <option value="se">Sverige</option>
+                        <option value="da">Danmark</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>VOKSEN 18+</legend>
+                    <Label>
+                        FORNAVN (IFØLGE PASS):
+                        <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Fornavn*">
+                    </Label>
+                    <Label>
+                        ETTERNAVN (IFØLGE PASS):
+                        <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Etternavn*">
+                    </Label>
+                    <label for="date">
+                        FØDSELSDATO:
+                        <input type="number" placeholder="DD" id="date" inputmode="numeric" min="1" max="31" required>
+                    </label>
+                    <label for="month">
+                        MÅNED
+                        <input type="number" placeholder="MM" id="month" inputmode="numeric" min="1" max="12" required>
+                    </label>
+                    <label for="year">
+                        ÅR
+                        <input type="number" placeholder="ÅÅÅÅ" id="year" inputmode="numeric" min="1926" max="2007" required>
+                    </label>
+                    <h3>KJØNN</h3>
+                    <input type="radio" name="gender" id="kvinne">
+                    <label for="kvinne">KVINNE</label>
+                    <input type="radio" name="gender" id="mann">
+                    <label for="mann">MANN</label>
+                    <label>
+                </fieldset>
+            </form>
         </section>
     </main>
     <footer>
