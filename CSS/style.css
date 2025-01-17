@@ -1,0 +1,6 @@
+/* Setter border-box som standard for å inkludere padding og border i elementenes totale bredde og høyde.*/
+
+*{
+    box-sizing: border-box;
+}
+
