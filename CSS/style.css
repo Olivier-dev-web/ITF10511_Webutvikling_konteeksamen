@@ -6,10 +6,38 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
 }
 
 
 #global-top{
+    display: flex;
+    padding: 1rem;
+    font-size: 2rem;
+    align-items: center;
+
+    img{
+        width: 3rem;
+    }
+    
+    :first-child{
+        margin-right: auto;
+    }
+
+    a{
+        color: rgb(0, 0, 0);
+    }
+
+    
+
+    #mobile ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        text-decoration: none;
+        gap: 0.5rem;
+    }
 
     .desktop{
         display: none;
