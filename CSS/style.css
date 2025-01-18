@@ -44,7 +44,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    
+
     #banner{
         grid-column: 1/2;
         grid-row: 1/3;
@@ -54,7 +54,8 @@ body{
         }
         
         background: url(../img/beach-from-top.jpg);
-        background-size: cover; }
+        background-size: cover;
+    }
         
     #order-form{
         grid-column: 1/2;
@@ -87,8 +88,10 @@ body{
             }
         }
     }
+   
 
 }
+
 
 #todays-deal{
     display: flex;
@@ -114,3 +117,34 @@ body{
         
     }
 }
+
+/*-------------Mye rart som har vært med nesting...jobber videre med minimalt med nesting-----------------*/
+#scroll-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    white-space: nowrap; /*egenskapen fant jeg ut av ved cowboy-koding*/
+    padding: 1rem;
+    gap: 1rem;
+    
+    h2{
+        display: none;
+    }
+}
+
+.deal{
+   display: flex;
+   flex-direction: column;
+   padding: 1rem;
+   border-radius: 10px;
+   box-shadow: 0 0 5px rgb(160, 160, 160); /*Hentet fra W3 - https://www.w3schools.com/css/css3_shadows_box.asp*/
+
+   a{
+    text-decoration: none;
+    color: rgb(85, 157, 208);
+   }
+
+}
+
+
