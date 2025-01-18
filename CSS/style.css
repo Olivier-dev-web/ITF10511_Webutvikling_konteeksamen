@@ -87,4 +87,30 @@ body{
             }
         }
     }
+
+}
+
+#todays-deal{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/holiday-2733322_1280.jpg);
+    background-size: cover;
+    border-radius: 10px;
+
+    article{
+        margin: 1rem;
+        padding: 1rem;
+        background-color: rgb(0, 234, 234);
+        border-radius: 0px 20px 0px 20px;
+    }
+
+    a{
+        margin: 2rem;
+        padding: 1rem;
+        background-color: rgb(247, 207, 25);
+        text-align: right;
+        margin-left: 16rem;
+        border-radius: 5px;
+        
+    }
 }
