@@ -147,4 +147,36 @@ body{
 
 }
 
+#inspo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+}
 
+
+.inspo-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(160, 160, 160);
+    
+    width: 385px;
+
+    img{
+        width: 100%;
+        border-radius: 10px 10px 0px 0px; /*prøvde meg frem til jeg fant ut av det*/
+    }
+
+    h3, p{
+        margin: 0;
+        padding: 1rem;
+        
+    }
+
+    a{
+        color: rgb(0, 0, 0);
+        text-decoration-color: rgb(85, 157, 208);
+        text-decoration-thickness: 5px;
+    }
+}
