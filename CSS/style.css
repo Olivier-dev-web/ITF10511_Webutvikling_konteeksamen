@@ -183,11 +183,12 @@ body{
 
 footer{
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ;
     background-color: rgb(37, 37, 37);
     color: rgb(255, 255, 255);
 }
+
 
 footer #nations{
     grid-column: 1/3;
@@ -203,6 +204,7 @@ footer #nations{
     }
 }
 
+
 footer figure{
     display: flex;
     align-items: center;
@@ -214,9 +216,14 @@ footer figure{
     }
 }
 
-footer #payment-method{
+#info{
     grid-column: 1/2;
     grid-row: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer #payment-method{
     padding: 1rem;
     
     h3{
@@ -235,8 +242,6 @@ footer #payment-method{
 }
 
 footer #notification{
-    grid-column: 1/2;
-    grid-row: 3/4;
 
     h3{
         font-size: 1rem;
@@ -271,12 +276,19 @@ footer #notification{
     }
 }
 
-footer #costumer-service{
-    grid-column: 2/3;
-    grid-row: 3/4;
+#costumer-service .list-style-delete{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    gap: 0.5rem;
+    padding: 0rem;
+
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
 }
 
-footer #some{
-    grid-column: 1/3;
-    grid-row: 4/5;
+#some{
 }
