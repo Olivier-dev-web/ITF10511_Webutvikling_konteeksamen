@@ -200,15 +200,15 @@
             </ul>
         </section>
         <section id="notification">
-            <h3>Nyheter & tilbud</h3>
+            <h3>NYHETER & TILBUD</h3>
             <form action="/submit-form">
                 <fieldset>
                     <legend>Meld deg på nyhetsbrev her</legend>
-                    <label>
+                    <label for="epost">
                         E-post
-                        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no*">
                     </label>
-                    <input type="submit" value="Send">
+                    <input type="email" id="epost" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no*">
+                    <input type="submit" value="Send" id="send">
                 </fieldset>
             </form>
             <a href="#">Kjøp reisegavekort</a>
