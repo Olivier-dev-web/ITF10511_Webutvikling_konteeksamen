@@ -221,6 +221,9 @@ footer figure{
     grid-row: 2/3;
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: left;
+    gap: 1rem;
 }
 
 footer #payment-method{
@@ -242,6 +245,7 @@ footer #payment-method{
 }
 
 footer #notification{
+    padding: 1rem;
 
     h3{
         font-size: 1rem;
@@ -276,8 +280,15 @@ footer #notification{
     }
 }
 
-#costumer-service .list-style-delete{
-    display: flex;
+#costumer-service{
+    padding: 1rem;
+
+    h3{
+        font-size: 1rem;
+    }
+
+    .list-style-delete{
+        display: flex;
     flex-direction: column;
     list-style: none;
     text-decoration: none;
@@ -288,19 +299,29 @@ footer #notification{
         text-decoration: none;
         color: rgb(255, 255, 255);
     }
+
+    }
 }
 
-#some .list-style-delete{
-    display: flex;
+#some{
+    padding: 1rem;
+    h3{
+        font-size: 1rem;
+    }
+
+    .list-style-delete{
+        display: flex;
     flex-direction: row;
     list-style: none;
     text-decoration: none;
-    gap: 0.5rem;
+    gap: 1rem;
     padding: 0rem;
     font-size: 2rem;
 
     a{
         text-decoration: none;
         color: rgb(255, 255, 255);
+    }
+
     }
 }
