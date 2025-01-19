@@ -180,3 +180,56 @@ body{
         text-decoration-thickness: 5px;
     }
 }
+
+footer{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto;
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+}
+
+footer #nations{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+
+    img{
+        width: 50px;
+    }
+
+    h3{
+        display: none;
+    }
+}
+
+footer figure{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+}
+
+footer #payment-method{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+footer #notification{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+footer #costumer-service{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+footer #some{
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
