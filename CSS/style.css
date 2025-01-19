@@ -290,5 +290,17 @@ footer #notification{
     }
 }
 
-#some{
+#some .list-style-delete{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    gap: 0.5rem;
+    padding: 0rem;
+    font-size: 2rem;
+
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
 }
