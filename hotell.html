@@ -9,28 +9,28 @@
     <link href="ikoner/css/solid.css" rel="stylesheet">
     <link href="ikoner/css/regular.css" rel="stylesheet">
     <link rel="stylesheet" href="ikoner/css/">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <!---Slutt for ekstern css-filer-->
     <title>Eksamen | Hotell</title>
 </head>
 <body>
     <header id="global-top">
+        <a href="#"><img src="img/logo.png" alt="logo"></a>
         <nav id="mobile">
-            <a href="#"><img src="img/logo.png" alt="logo"></a>
             <ul>
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass" title="søk"></i></a></li>
                 <li><i class="fa-regular fa-circle-user"></i></li>
                 <li><i class="fa-solid fa-bars"></i></li>
             </ul>
         </nav>
-        <nav id="desktop">
+        <nav class="desktop">
             <ul>
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass" title="søk"></i></a></li>
                 <li><a href="#">Opprett en konto</a></li>
                 <li><a href="#"><i class="fa-regular fa-circle-user" title="bruker"></i> Min side</a></li>
             </ul>
         </nav>
-        <nav>
+        <nav class="desktop">
             <a href="#"><img src="img/logo.png" alt="logo"></a>
             <ul>
                 <li><a href="#">Tips og inspirasjon</a></li>
@@ -108,18 +108,34 @@
         <p>Velg room</p>
     </section>
    </main>
-    <footer>
-        <section>
-            <h3>Nasjonalitet</h3>
+   <footer>
+    <section id="nations">
+        <h3>Nasjoner</h3>
+        <figure>
             <img src="flagg/sweden.png" alt="Sverige">
+            <figcaption>Sverige</figcaption>
+        </figure>
+        <figure>
             <img src="flagg/denmark.png" alt="Danmark">
+            <figcaption>Danmark</figcaption>
+        </figure>
+        <figure>
             <img src="flagg/norway.png" alt="Norge">
+            <figcaption>Norge</figcaption>
+        </figure>
+        <figure>
             <img src="flagg/material.png" alt="Suomi">
+            <figcaption>Suomi</figcaption>
+        </figure>
+        <figure>
             <img src="flagg/netherlands.png" alt="Nederland">
-        </section>
-        <section>
+            <figcaption>Nederland</figcaption>
+        </figure>
+    </section>
+    <div id="info">
+        <section id="payment-method">
             <h3>BETALINGSMETODER</h3>
-            <ul>
+            <ul class="list-style-delete">
                 <li><i class="fa-brands fa-cc-visa" title="visa"></i></li>
                 <li><i class="fa-brands fa-cc-mastercard" title="mastercard"></i></li>
                 <li><i class="fa-brands fa-cc-paypal" title="paypal"></i></li>
@@ -127,32 +143,32 @@
                 <li><i class="fa-brands fa-cc-amazon-pay" title="amazonpay"></i></li>
             </ul>
         </section>
-        <section>
-            <h3>Nyheter & tilbud</h3>
+        <section id="notification">
+            <h3>NYHETER & TILBUD</h3>
             <form action="/submit-form">
                 <fieldset>
                     <legend>Meld deg på nyhetsbrev her</legend>
-                    <label>
+                    <label for="epost">
                         E-post
-                        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no*">
                     </label>
-                    <input type="submit" value="Send">
+                    <input type="email" id="epost" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no*">
+                    <input type="submit" value="Send" id="send">
                 </fieldset>
             </form>
             <a href="#">Kjøp reisegavekort</a>
         </section>
-        <section>
+        <section id="costumer-service">
             <h3>KUNDESERVICE</h3>
-            <ul>
+            <ul class="list-style-delete">
                 <li><a href="#">Spørsmål og Svar</a></li>
                 <li><a href="#">Chat</a></li>
                 <li><a href="#">Kontakt</a></li>
                 <li><a href="#">Tilgjengelighets-erklæring</a></li>
             </ul>
         </section>
-        <section>
+        <section id="some">
             <h3>SOSIALE MEDIER</h3>
-            <ul>
+            <ul class="list-style-delete">
                 <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" title="instagram"></i></a></li>
                 <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" title="facebook"></i></a></li>
                 <li><a href="https://no.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest" title="pinterest"></i></a></li>
@@ -160,6 +176,7 @@
                 <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" title="youtube"></i></a></li>
             </ul>
         </section>
+    </div>
     </footer>
 </body>
 </html>
