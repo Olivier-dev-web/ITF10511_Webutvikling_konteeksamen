@@ -71,9 +71,23 @@ body{
             padding: 0.5rem;
             border-radius: 10px;
             
-            nav{
+            .scroll-container{
                 display: flex;
                 flex-direction: row;
+                flex-wrap: nowrap;
+                overflow: scroll;
+                white-space: nowrap; /*egenskapen fant jeg ut av ved cowboy-koding*/
+                padding: 1rem;
+                gap: 1rem;
+
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                    text-decoration: none;
+                    color: black;
+                }
+
                 
             }
             
@@ -118,7 +132,7 @@ body{
 }
 
 /*-------------Mye rart som har vært med nesting...jobber videre med minimalt med nesting-----------------*/
-#scroll-container{
+.scroll-container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
