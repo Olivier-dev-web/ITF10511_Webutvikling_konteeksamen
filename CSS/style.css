@@ -346,9 +346,19 @@ footer #notification{
 
 
 /*-----------------Her kommer stilsetting av Hotell siden-----------------*/
+#header-grid-container-hotell{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
 
+#photo-gallery{
+    
+    h2{
+        display: none;
+    }
 
-#photo-gallery .scroll-container{
+    .scroll-container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -356,6 +366,7 @@ footer #notification{
     white-space: nowrap; /*egenskapen fant jeg ut av ved cowboy-koding*/
     padding: 0;
     gap: 0;
+
 
     figure{
         margin: 0;
@@ -366,6 +377,7 @@ footer #notification{
         height: 100%;
         /*for å få bildene slikt på siden har jeg prøvd og feilet i flere timer...*/
     }
+}
 }
 
 #nav-overview{
