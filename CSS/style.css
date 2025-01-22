@@ -350,6 +350,31 @@ footer #notification{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+
+    #header-hotell{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #overview{
+        grid-column: 1/2;
+        grid-row: 2/2;
+    }
+
+    #facilities{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #explore{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #availability{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
 }
 
 #photo-gallery{
