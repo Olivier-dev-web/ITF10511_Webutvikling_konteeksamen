@@ -347,6 +347,7 @@ footer #notification{
 
 
 /*-----------------Her kommer stilsetting av Hotell siden-----------------*/
+/*--------kun definering av grid og plassering av grid-elementer, for unngå mye nesting------*/
 #header-grid-container-hotell{
     display: grid;
     grid-template-columns: 1fr;
@@ -360,17 +361,20 @@ footer #notification{
     #overview{
         grid-column: 1/2;
         grid-row: 2/2;
+        padding: 1rem;
 
     }
 
     #facilities{
         grid-column: 1/2;
         grid-row: 3/4;
+        padding: 1rem;
     }
 
     #explore{
         grid-column: 1/2;
         grid-row: 4/5;
+        
     }
 
     #availability{
@@ -378,6 +382,74 @@ footer #notification{
         grid-row: 5/6;
     }
 }
+
+/*--------slutt på definering av grid og plassering av grid-elementer---------*/
+
+#photo-gallery{
+    
+    h2{
+        display: none;
+    }
+
+    .scroll-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    white-space: nowrap; /*egenskapen fant jeg ut av ved cowboy-koding*/
+    padding: 0;
+    gap: 0;
+
+
+        figure{
+            margin: 0;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            /*for å få bildene slikt på siden har jeg prøvd og feilet i flere timer...*/
+        }
+    }
+
+}
+
+#nav-overview{
+
+
+    .list-style-delete{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        text-decoration: none;
+        gap: 0.5rem;
+        padding: 0rem;
+        border-bottom: 2px solid grey;
+
+
+        a{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+
+
+        .blue-underscore{
+            border-bottom: 3px solid;
+            padding-bottom: 1rem;
+            color: rgb(85, 157, 208);
+        }
+
+
+        #blue-font{
+                color: rgb(85, 157, 208);
+        }
+
+    }
+
+}
+
+
 
 #overview{
 
@@ -444,10 +516,24 @@ footer #notification{
     }
 }
 
+
+#explore{
+
+    iframe{
+        width: 100%;
+    }
+}
+
+
+
 #availability{
 
     padding: 1rem;
     padding-bottom: 0;
+
+    img{
+        width: 100%;
+    }
 
     #room-cards{
         display: flex;
@@ -568,82 +654,3 @@ footer #notification{
 
 }
 
-#photo-gallery{
-    
-    h2{
-        display: none;
-    }
-
-    .scroll-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow: scroll;
-    white-space: nowrap; /*egenskapen fant jeg ut av ved cowboy-koding*/
-    padding: 0;
-    gap: 0;
-
-
-    figure{
-        margin: 0;
-    }
-
-    img{
-        width: 100%;
-        height: 100%;
-        /*for å få bildene slikt på siden har jeg prøvd og feilet i flere timer...*/
-    }
-}
-}
-
-#nav-overview{
-
-
-    .list-style-delete{
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        text-decoration: none;
-        gap: 0.5rem;
-        padding: 0rem;
-        border-bottom: 2px solid grey;
-
-
-        a{
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-        }
-
-
-
-        .blue-underscore{
-            border-bottom: 3px solid;
-            padding-bottom: 1rem;
-            color: rgb(85, 157, 208);
-            }
-
-            #blue-font{
-                color: rgb(85, 157, 208);
-            }
-        }
-    }
-
-
-
-
-
-#explore{
-
-    iframe{
-        width: 100%;
-    }
-}
-
-
-
-#availability{
-
-    img{
-        width: 100%;
-    }
-}
