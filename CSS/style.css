@@ -391,16 +391,60 @@ footer #notification{
         display: none;
     }
 
+
     .scroll-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow: scroll;
-    white-space: nowrap; /*egenskapen fant jeg ut av ved cowboy-koding*/
-    padding: 0;
-    gap: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        white-space: nowrap; /*egenskapen fant jeg ut av ved cowboy-koding*/
+        padding: 0;
+        gap: 0;
 
+        .fa-heart{
+            position: absolute;
+            top: 145px;
+            right: 10px;
+            background-color: #ffffff;
+            padding: 0.5rem;
+            color: #fb0000;
+            border-radius: 20px;
+        
+        }
 
+        .fa-circle-chevron-left{
+            position: absolute;
+            top: 265px;
+            left: 5px;
+            font-size: 1.5rem;
+            background-color: #fff;
+            border-radius: 25px;
+            opacity: 0.5;
+        }
+
+        .fa-circle-chevron-right{
+            position: absolute;
+            top: 265px;
+            right: 5px;
+            font-size: 1.5rem;
+            background-color: #fff;
+            border-radius: 25px;
+            opacity: 0.5;
+        }
+
+        .fa-images{
+            position: absolute;
+            top: 360px;
+            right: 5px;
+            background-color: #575555;
+            font-size: 0.6rem;
+            color: #fff;
+            border-radius: 25px;
+            opacity: 0.8;
+            padding: 0.5rem;
+        }
+
+        
         figure{
             margin: 0;
         }
