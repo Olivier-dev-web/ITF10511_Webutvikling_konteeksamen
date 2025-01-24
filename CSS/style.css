@@ -745,6 +745,13 @@ footer #notification{
         padding: 1rem;
         border-radius: 10px;
         box-shadow: 0 0 5px rgb(160, 160, 160);
+
+        img{
+            width: 100%;
+            margin-top: 1rem;
+            border-radius: 10px;
+        }
+
     }
 
     summary{
@@ -754,11 +761,7 @@ footer #notification{
         font-weight: bold;
     }
 
-    img{
-        width: 100%;
-        margin-top: 1rem;
-        border-radius: 10px;
-    }
+    
 
 }
 
