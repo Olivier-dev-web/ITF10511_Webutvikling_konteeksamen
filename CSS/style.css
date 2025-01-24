@@ -824,3 +824,61 @@ footer #notification{
 #person-info{
     padding: 1rem;
 }
+
+#main-order{
+    background-color: #f8f8f8;
+
+    legend{
+        font-weight: bold;
+    }
+
+    label{
+        display: block;
+    }
+
+    .month-year{
+        display: none;
+    }
+
+
+    #fornavn, #etternavn{
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid #e1e1e1;
+    }
+
+    #birthdate-info{
+        display: flex;
+        justify-content: space-between;
+
+        #fødselsdato{
+            width: 35%;
+        }
+
+        #måned{
+            width: 25%;
+        }
+
+        #år{
+            width: 20%;
+        }
+    }
+
+    .gender-label{
+        display: inline;
+    }
+
+    #epost, #telefon, #gateadresse, #postnummer, #poststed, #land{
+        width: 100%;
+    }
+
+    
+
+    
+
+
+}
+

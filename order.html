@@ -116,25 +116,23 @@
             <form action="/submit-form" id="order-info">
                 <fieldset id="main-order">
                     <legend>VOKSEN 18+ HOVEDBESTILLER</legend>
-                    <Label>
-                        FORNAVN (IFØLGE PASS):
-                        <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Fornavn*">
-                    </Label>
-                    <Label>
-                        ETTERNAVN (IFØLGE PASS):
-                        <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Etternavn*">
-                    </Label>
-                    <label for="date">FØDSELSDATO:</label>
-                    <input type="number" placeholder="DD" id="date" inputmode="numeric" min="1" max="31" required>
-                    <label for="month" class="month-year">MÅNED</label>
-                    <input type="number" placeholder="MM" id="month" inputmode="numeric" min="1" max="12" required>
-                    <label for="year" class="month-year">ÅR</label>
-                    <input type="number" placeholder="ÅÅÅÅ" id="year" inputmode="numeric" min="1926" max="2007" required>
+                    <Label for="fornavn">FORNAVN (IFØLGE PASS):</Label>
+                    <input type="text" id="fornavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Fornavn*">
+                    <Label for="etternavn">ETTERNAVN (IFØLGE PASS):</Label>
+                    <input type="text" id="etternavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Etternavn*">
+                    <label for="fødselsdato">FØDSELSDATO:</label>
+                    <div id="birthdate-info">
+                        <input type="number" placeholder="DD" id="fødselsdato" inputmode="numeric" min="1" max="31" required>
+                        <label for="måned" class="month-year">MÅNED</label>
+                        <input type="number" placeholder="MM" id="måned" inputmode="numeric" min="1" max="12" required>
+                        <label for="år" class="month-year">ÅR</label>
+                        <input type="number" placeholder="ÅÅÅÅ" id="år" inputmode="numeric" min="1926" max="2007" required>
+                    </div>
                     <h3>KJØNN</h3>
                     <input type="radio" name="gender" id="kvinne">
-                    <label for="kvinne">KVINNE</label>
+                    <label for="kvinne" class="gender-label">KVINNE</label>
                     <input type="radio" name="gender" id="mann">
-                    <label for="mann">MANN</label>
+                    <label for="mann" class="gender-label">MANN</label>
                     <label for="epost">E-POSTADRESSE:</label>
                     <input type="email" id="epost" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no*">
                     <label for="telefon">TELEFONNUMMER:</label>
@@ -143,8 +141,8 @@
                     <input type="text" id="gateadresse" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Gateadresse*">
                     <Label for="postnummer">POSTNUMMER:</Label>
                     <input type="number" id="postnummer" required placeholder="Postnummer*">
-                    <Label>POSTSTED:</Label>
-                    <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Poststed*">
+                    <Label for="poststed">POSTSTED:</Label>
+                    <input type="text" id="poststed" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Poststed*">
                     <label for="land">LAND:</label>
                     <select name="land" id="land">
                         <option value="velg">Velg et land</option>
@@ -156,10 +154,10 @@
 
                 <fieldset id="second-person">
                     <legend>VOKSEN 18+</legend>
-                    <Label for="fornavn">FORNAVN (IFØLGE PASS):</Label>
-                    <input type="text" id="fornavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Fornavn*">
-                    <Label for="etternavn">ETTERNAVN (IFØLGE PASS):</Label>
-                    <input type="text" id="etternavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Etternavn*">
+                    <Label for="fornavn-2">FORNAVN (IFØLGE PASS):</Label>
+                    <input type="text" id="fornavn-2" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Fornavn*">
+                    <Label for="etternavn-2">ETTERNAVN (IFØLGE PASS):</Label>
+                    <input type="text" id="etternavn-2" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Etternavn*">
                     <label for="fødselsdato-2">FØDSELSDATO:</label>
                     <input type="number" placeholder="DD" id="fødselsdato-2" inputmode="numeric" min="1" max="31" required>
                     <label for="måned-2" class="month-year"> MÅNED</label>
@@ -217,10 +215,8 @@
                 <form action="/submit-form">
                     <fieldset>
                         <legend>Meld deg på nyhetsbrev her</legend>
-                        <label for="epost">
-                            E-post
-                        </label>
-                        <input type="email" id="epost" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no*">
+                        <label for="epost-nyhetsbrev">E-post</label>
+                        <input type="email" id="epost-nyhetsbrev" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no*">
                         <input type="submit" value="Send" id="send">
                     </fieldset>
                 </form>
