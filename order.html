@@ -114,14 +114,14 @@
         <section id="person-info">
             <h2>Oppgi dine bestillingsoppsylsninger</h2>
             <form action="/submit-form" id="order-info">
-                <fieldset id="main-order">
+                <fieldset class="main-and-2person-form">
                     <legend>VOKSEN 18+ HOVEDBESTILLER</legend>
                     <Label for="fornavn">FORNAVN (IFØLGE PASS):</Label>
                     <input type="text" id="fornavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Fornavn*">
                     <Label for="etternavn">ETTERNAVN (IFØLGE PASS):</Label>
                     <input type="text" id="etternavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Etternavn*">
                     <label for="fødselsdato">FØDSELSDATO:</label>
-                    <div id="birthdate-info">
+                    <div class="birthdate-info">
                         <input type="number" placeholder="DD" id="fødselsdato" inputmode="numeric" min="1" max="31" required>
                         <label for="måned" class="month-year">MÅNED</label>
                         <input type="number" placeholder="MM" id="måned" inputmode="numeric" min="1" max="12" required>
@@ -152,23 +152,25 @@
                     </select>
                 </fieldset>
 
-                <fieldset id="second-person">
+                <fieldset class="main-and-2person-form">
                     <legend>VOKSEN 18+</legend>
                     <Label for="fornavn-2">FORNAVN (IFØLGE PASS):</Label>
                     <input type="text" id="fornavn-2" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Fornavn*">
                     <Label for="etternavn-2">ETTERNAVN (IFØLGE PASS):</Label>
                     <input type="text" id="etternavn-2" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Etternavn*">
                     <label for="fødselsdato-2">FØDSELSDATO:</label>
-                    <input type="number" placeholder="DD" id="fødselsdato-2" inputmode="numeric" min="1" max="31" required>
-                    <label for="måned-2" class="month-year"> MÅNED</label>
-                    <input type="number" placeholder="MM" id="måned-2" inputmode="numeric" min="1" max="12" required>
-                    <label for="år-2" class="month-year">ÅR</label>
-                    <input type="number" placeholder="ÅÅÅÅ" id="år-2" inputmode="numeric" min="1926" max="2007" required>
+                    <div class="birthdate-info">
+                        <input type="number" placeholder="DD" id="fødselsdato-2" inputmode="numeric" min="1" max="31" required>
+                        <label for="måned-2" class="month-year"> MÅNED</label>
+                        <input type="number" placeholder="MM" id="måned-2" inputmode="numeric" min="1" max="12" required>
+                        <label for="år-2" class="month-year">ÅR</label>
+                        <input type="number" placeholder="ÅÅÅÅ" id="år-2" inputmode="numeric" min="1926" max="2007" required>
+                    </div>
                     <h3>KJØNN</h3>
                     <input type="radio" name="gender" id="kvinne-2">
-                    <label for="kvinne-2">KVINNE</label>
+                    <label for="kvinne-2" class="gender-label">KVINNE</label>
                     <input type="radio" name="gender" id="mann-2">
-                    <label for="mann-2">MANN</label>
+                    <label for="mann-2" class="gender-label">MANN</label>
                 </fieldset>
                 <label for="siste-trinn">Siste trinn</label>
                 <input type="submit" name="sistetrinn" id="siste-trinn">
