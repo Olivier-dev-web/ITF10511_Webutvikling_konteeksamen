@@ -738,5 +738,25 @@ footer #notification{
     h2{
         display: none;
     }
+
+
+    #mobile-view{
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgb(160, 160, 160);
+    }
+
+    summary{
+        display: flex;
+        align-items: baseline;
+        gap: 0.2rem;
+    }
+
+    img{
+        width: 100%;
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
 }
 
