@@ -729,6 +729,29 @@ footer #notification{
 }
 
 
+#grid-container-order{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*kilde https://www.youtube.com/watch?v=3T0gjtXRNC0&t=286s*/
+    grid-template-rows: 1fr;
+
+    nav{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #overview-order{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #person-info{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+}
+
+
 #overview-order{
 
     .desktop{
