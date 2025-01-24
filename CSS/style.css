@@ -734,5 +734,9 @@ footer #notification{
     .desktop{
         display: none;
     }
+
+    h2{
+        display: none;
+    }
 }
 
