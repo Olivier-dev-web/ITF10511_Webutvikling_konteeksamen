@@ -819,3 +819,8 @@ footer #notification{
 .discounted-price{
     color: #fb0000;
 }
+
+
+#person-info{
+    padding: 1rem;
+}

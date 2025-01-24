@@ -113,8 +113,8 @@
         </section>
         <section id="person-info">
             <h2>Oppgi dine bestillingsoppsylsninger</h2>
-            <form action="/submit-form">
-                <fieldset>
+            <form action="/submit-form" id="order-info">
+                <fieldset id="main-order">
                     <legend>VOKSEN 18+ HOVEDBESTILLER</legend>
                     <Label>
                         FORNAVN (IFØLGE PASS):
@@ -124,43 +124,27 @@
                         ETTERNAVN (IFØLGE PASS):
                         <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Etternavn*">
                     </Label>
-                    <label for="date">
-                        FØDSELSDATO:
-                        <input type="number" placeholder="DD" id="date" inputmode="numeric" min="1" max="31" required>
-                    </label>
-                    <label for="month">
-                        MÅNED
-                        <input type="number" placeholder="MM" id="month" inputmode="numeric" min="1" max="12" required>
-                    </label>
-                    <label for="year">
-                        ÅR
-                        <input type="number" placeholder="ÅÅÅÅ" id="year" inputmode="numeric" min="1926" max="2007" required>
-                    </label>
+                    <label for="date">FØDSELSDATO:</label>
+                    <input type="number" placeholder="DD" id="date" inputmode="numeric" min="1" max="31" required>
+                    <label for="month" class="month-year">MÅNED</label>
+                    <input type="number" placeholder="MM" id="month" inputmode="numeric" min="1" max="12" required>
+                    <label for="year" class="month-year">ÅR</label>
+                    <input type="number" placeholder="ÅÅÅÅ" id="year" inputmode="numeric" min="1926" max="2007" required>
                     <h3>KJØNN</h3>
                     <input type="radio" name="gender" id="kvinne">
                     <label for="kvinne">KVINNE</label>
                     <input type="radio" name="gender" id="mann">
                     <label for="mann">MANN</label>
-                    <label>
-                        E-POSTADRESSE:
-                        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no*">
-                    </label>
-                    <label>
-                        TELEFONNUMMER:
-                        <input type="tel" pattern="[0-9]{8,12}" required placeholder="+4741***482*"> 
-                    </label>
-                    <Label>
-                        GATEADRESSE:
-                        <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Gateadresse*">
-                    </Label>
-                    <Label>
-                        POSTNUMMER:
-                        <input type="number"  required placeholder="Postnummer*">
-                    </Label>
-                    <Label>
-                        POSTSTED:
-                        <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Poststed*">
-                    </Label>
+                    <label for="epost">E-POSTADRESSE:</label>
+                    <input type="email" id="epost" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no*">
+                    <label for="telefon">TELEFONNUMMER:</label>
+                    <input type="tel" id="telefon" pattern="[0-9]{8,12}" required placeholder="+4741***482*">
+                    <Label for="gateadresse">GATEADRESSE:</Label>
+                    <input type="text" id="gateadresse" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Gateadresse*">
+                    <Label for="postnummer">POSTNUMMER:</Label>
+                    <input type="number" id="postnummer" required placeholder="Postnummer*">
+                    <Label>POSTSTED:</Label>
+                    <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Poststed*">
                     <label for="land">LAND:</label>
                     <select name="land" id="land">
                         <option value="velg">Velg et land</option>
@@ -170,23 +154,23 @@
                     </select>
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="second-person">
                     <legend>VOKSEN 18+</legend>
                     <Label for="fornavn">FORNAVN (IFØLGE PASS):</Label>
                     <input type="text" id="fornavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Fornavn*">
                     <Label for="etternavn">ETTERNAVN (IFØLGE PASS):</Label>
                     <input type="text" id="etternavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Etternavn*">
-                    <label for="date2">FØDSELSDATO:</label>
-                    <input type="number" placeholder="DD" id="date2" inputmode="numeric" min="1" max="31" required>
-                    <label for="month2"> MÅNED</label>
-                    <input type="number" placeholder="MM" id="month2" inputmode="numeric" min="1" max="12" required>
-                    <label for="year2">ÅR</label>
-                    <input type="number" placeholder="ÅÅÅÅ" id="year2" inputmode="numeric" min="1926" max="2007" required>
+                    <label for="fødselsdato-2">FØDSELSDATO:</label>
+                    <input type="number" placeholder="DD" id="fødselsdato-2" inputmode="numeric" min="1" max="31" required>
+                    <label for="måned-2" class="month-year"> MÅNED</label>
+                    <input type="number" placeholder="MM" id="måned-2" inputmode="numeric" min="1" max="12" required>
+                    <label for="år-2" class="month-year">ÅR</label>
+                    <input type="number" placeholder="ÅÅÅÅ" id="år-2" inputmode="numeric" min="1926" max="2007" required>
                     <h3>KJØNN</h3>
-                    <input type="radio" name="gender" id="kvinne2">
-                    <label for="kvinne2">KVINNE</label>
-                    <input type="radio" name="gender" id="mann2">
-                    <label for="mann2">MANN</label>
+                    <input type="radio" name="gender" id="kvinne-2">
+                    <label for="kvinne-2">KVINNE</label>
+                    <input type="radio" name="gender" id="mann-2">
+                    <label for="mann-2">MANN</label>
                 </fieldset>
                 <label for="siste-trinn">Siste trinn</label>
                 <input type="submit" name="sistetrinn" id="siste-trinn">
