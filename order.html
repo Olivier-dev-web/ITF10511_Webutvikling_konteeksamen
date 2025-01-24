@@ -172,26 +172,16 @@
 
                 <fieldset>
                     <legend>VOKSEN 18+</legend>
-                    <Label>
-                        FORNAVN (IFØLGE PASS):
-                        <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Fornavn*">
-                    </Label>
-                    <Label>
-                        ETTERNAVN (IFØLGE PASS):
-                        <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Etternavn*">
-                    </Label>
-                    <label for="date2">
-                        FØDSELSDATO:
-                        <input type="number" placeholder="DD" id="date2" inputmode="numeric" min="1" max="31" required>
-                    </label>
-                    <label for="month2">
-                        MÅNED
-                        <input type="number" placeholder="MM" id="month2" inputmode="numeric" min="1" max="12" required>
-                    </label>
-                    <label for="year2">
-                        ÅR
-                        <input type="number" placeholder="ÅÅÅÅ" id="year2" inputmode="numeric" min="1926" max="2007" required>
-                    </label>
+                    <Label for="fornavn">FORNAVN (IFØLGE PASS):</Label>
+                    <input type="text" id="fornavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Fornavn*">
+                    <Label for="etternavn">ETTERNAVN (IFØLGE PASS):</Label>
+                    <input type="text" id="etternavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Etternavn*">
+                    <label for="date2">FØDSELSDATO:</label>
+                    <input type="number" placeholder="DD" id="date2" inputmode="numeric" min="1" max="31" required>
+                    <label for="month2"> MÅNED</label>
+                    <input type="number" placeholder="MM" id="month2" inputmode="numeric" min="1" max="12" required>
+                    <label for="year2">ÅR</label>
+                    <input type="number" placeholder="ÅÅÅÅ" id="year2" inputmode="numeric" min="1926" max="2007" required>
                     <h3>KJØNN</h3>
                     <input type="radio" name="gender" id="kvinne2">
                     <label for="kvinne2">KVINNE</label>
