@@ -729,3 +729,10 @@ footer #notification{
 }
 
 
+#overview-order{
+
+    .desktop{
+        display: none;
+    }
+}
+
