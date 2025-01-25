@@ -180,11 +180,14 @@ body{
 
 }
 
+#tips-inspo{
+    padding: 1rem;
+}
+
 #inspo{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding: 1rem;
 }
 
 
