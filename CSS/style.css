@@ -122,11 +122,10 @@ body{
     }
 
     a{
-        margin: 2rem;
+        margin: 1rem;
+        align-self: end;
         padding: 1rem;
         background-color: rgb(247, 207, 25);
-        text-align: right;
-        margin-left: 16rem;
         border-radius: 5px;
         
     }
