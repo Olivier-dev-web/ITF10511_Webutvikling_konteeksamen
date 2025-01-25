@@ -117,7 +117,7 @@ body{
     article{
         margin: 1rem;
         padding: 1rem;
-        background-color: rgb(0, 234, 234);
+        background-color: #52d3f0;
         border-radius: 0px 20px 0px 20px;
     }
 
@@ -156,7 +156,7 @@ body{
 
    a{
     text-decoration: none;
-    color: rgb(85, 157, 208);
+    color: #52d3f0;
    }
 
 }
@@ -190,7 +190,7 @@ body{
 
     a{
         color: rgb(0, 0, 0);
-        text-decoration-color: rgb(85, 157, 208);
+        text-decoration-color: #52d3f0;
         text-decoration-thickness: 5px;
     }
 }
@@ -481,12 +481,12 @@ footer #notification{
         .blue-underscore{
             border-bottom: 3px solid;
             padding-bottom: 1rem;
-            color: rgb(85, 157, 208);
+            color: #52d3f0;
         }
 
 
         #blue-font{
-                color: rgb(85, 157, 208);
+                color: #52d3f0);
         }
 
     }
@@ -518,7 +518,7 @@ footer #notification{
 
     a{
         text-decoration: none;
-        color: rgb(85, 157, 208);
+        color: #52d3f0;
     }
 }
 
@@ -556,7 +556,7 @@ footer #notification{
 
     a{
         text-decoration: none;
-        color: rgb(85, 157, 208);
+        color: #52d3f0;
     }
 }
 
@@ -635,7 +635,7 @@ footer #notification{
             h4{
                 display: flex;
                 width: 100px;
-                background-color: #3bbaeb;
+                background-color: #52d3f0;
                 border-radius: 20px;
                 color: #ffffff;
                 margin: 4px;
@@ -707,7 +707,7 @@ footer #notification{
     flex-wrap: nowrap;
     overflow: scroll;
     list-style: none;
-    background-color: #3bbaeb;
+    background-color: #52d3f0;
     color: #ffffff;
     font-size: 1.5rem;
     padding: 0;
