@@ -101,6 +101,13 @@ body{
                 background-color: white;
                 border: none;
             }
+
+            #søk{
+                padding: 1rem;
+                background-color: rgb(255, 212, 17);
+                border-radius: 5px;
+                font-weight: bold;
+            }
         }
     }
 
