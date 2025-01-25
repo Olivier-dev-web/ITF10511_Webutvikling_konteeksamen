@@ -745,6 +745,7 @@ body{
 }
 
 /*-----------------Her slutter stilsetting av Hotell siden-----------------*/
+
 /*-----------------Her starter stilsetting av Hotell siden-----------------*/
 
 #process-nav{
@@ -753,7 +754,7 @@ body{
     flex-wrap: nowrap;
     overflow: scroll;
     list-style: none;
-    background-color: #52d3f0;
+    background-color: #1ca2c1;
     color: #ffffff;
     font-size: 1.5rem;
     padding: 0;
@@ -851,7 +852,7 @@ body{
     gap: .5rem;
     list-style: none;
     font-size: 1.5rem;
-    color: #fff076;
+    color: #ffda58;
 }
 
 .overview-with-icons{
@@ -892,7 +893,7 @@ body{
     button{
         padding: 1rem;
         width: 120px;
-        background-color: #fbde6e;
+        background-color: #ffd33c;
         border: none;
         border-radius: 5px;
         font-weight: bold;
@@ -900,7 +901,7 @@ body{
 }
 
 .main-and-2person-form{
-    background-color: #f8f8f8;
+    background-color: #F6F5F2;
     border-radius: 10px;
     border: none;
 
