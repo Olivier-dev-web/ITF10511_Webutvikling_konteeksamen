@@ -123,9 +123,19 @@ body{
 
     article{
         margin: 1rem;
-        padding: 1rem;
+        padding: 2rem;
         background-color: #52d3f0;
         border-radius: 0px 20px 0px 20px;
+
+        p{
+            margin: 0;
+        }
+
+        #from-price{
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
     }
 
     a{
@@ -134,6 +144,9 @@ body{
         padding: 1rem;
         background-color: rgb(247, 207, 25);
         border-radius: 5px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
         
     }
 }
