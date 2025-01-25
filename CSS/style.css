@@ -219,8 +219,22 @@ body{
 
     a{
         color: rgb(0, 0, 0);
-        text-decoration-color: #52d3f0;
-        text-decoration-thickness: 5px;
+        text-decoration: none;
+        padding: .5rem;
+    }
+
+    ul{
+        display: inline-flex;
+        margin: 0;
+        list-style: none;
+        padding-left: 0.2rem;
+
+        li{
+            border-bottom: 3px solid;
+            padding-bottom: .5rem;
+            color: #52d3f0;
+            border-radius: 0 0 0 3px;
+        }
     }
 }
 
