@@ -331,7 +331,7 @@ body{
         border-radius: 5px;
         border: none;
         padding: 0.5rem;
-        background-color: rgb(242, 170, 76);
+        background-color: #ffd33c;
         font-weight: bold;
     }
 
@@ -511,7 +511,7 @@ body{
         text-decoration: none;
         gap: 0.5rem;
         padding: 0rem;
-        border-bottom: 2px solid grey;
+        border-bottom: 2px solid #F6F5F2;
 
 
         a{
@@ -524,12 +524,13 @@ body{
         .blue-underscore{
             border-bottom: 3px solid;
             padding-bottom: 1rem;
-            color: #52d3f0;
+            color: #1ca2c1;
         }
 
 
         #blue-font{
-                color: #52d3f0;
+            color: #1ca2c1;
+            font-weight: bold;
         }
 
     }
@@ -544,14 +545,14 @@ body{
         display: flex;
         flex-direction: row;
         gap: 0.5rem;
-        color: #fed68d;
+        color: #ffda58;
     }
 
     p{
         font-weight: bolder;
 
         span{
-            background-color: #218340;
+            background-color: #019101;
             border-radius: 8px;
             padding: 0.4rem;
             font-size: 0.8rem;
@@ -561,7 +562,8 @@ body{
 
     a{
         text-decoration: none;
-        color: #52d3f0;
+        color: #1ca2c1;
+        font-weight: bold;
     }
 }
 
@@ -599,7 +601,8 @@ body{
 
     a{
         text-decoration: none;
-        color: #52d3f0;
+        color: #1ca2c1;
+        font-weight: bold;
     }
 }
 
@@ -678,7 +681,7 @@ body{
             h4{
                 display: flex;
                 width: 100px;
-                background-color: #52d3f0;
+                background-color: #1ca2c1;
                 border-radius: 20px;
                 color: #ffffff;
                 margin: 4px;
@@ -717,7 +720,7 @@ body{
             font-weight: bold;
 
             span{
-                background-color: #218340;
+                background-color: #019101;
                 border-radius: 8px;
                 padding: 0.4rem;
                 font-size: 0.8rem;
