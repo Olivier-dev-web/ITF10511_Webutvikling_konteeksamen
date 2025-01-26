@@ -1005,6 +1005,19 @@ body{
     #todays-deal{
         height: 400px;
     }
+
+    #availability{
+        padding-right: 0;
+    }
+
+    #room-cards{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .room-card{
+        max-width: 300px;
+    }
 }
 
 
