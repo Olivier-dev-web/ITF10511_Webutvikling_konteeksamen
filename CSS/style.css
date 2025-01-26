@@ -1111,18 +1111,31 @@ body{
             grid-column: 1/3;
             grid-row: 2/3;
             padding: 1rem;
-    
+
+            padding-bottom: 0;
         }
     
         #facilities{
             grid-column: 1/2;
             grid-row: 3/4;
             padding: 1rem;
+
+            padding-top: 0;
+
+            h2{
+                margin-top: 0;
+            }
         }
     
         #explore{
             grid-column: 2/3;
-            grid-row: 3/4;
+            grid-row: 2/4;
+
+            padding-top: 1rem;
+
+            iframe{
+                border-radius: 10px 10px 10px 10px;
+            }
             
         }
     
