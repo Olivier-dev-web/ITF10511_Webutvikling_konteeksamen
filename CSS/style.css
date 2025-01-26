@@ -1228,13 +1228,51 @@ body{
         padding-left: 1rem;
     }
 
-}
 
 
+  /*-----------------------bestillingssiden------------------------*/
 
-@media only screen and (min-width: 780px){
+    #grid-container-order{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 1rem;
+
+        nav{
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
     
+        #overview-order{
+            grid-column: 2/3;
+            grid-row: 2/3;
+
+            #mobile-view{
+                display: none;
+            }
+
+            .desktop{
+                display: block;
+                padding: 1rem;
+                margin-top: 1rem;
+                box-shadow: 0 0 5px rgb(160, 160, 160);
+                border-radius: 10px;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    
+        #person-info{
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+    }
+
 }
+
+
 
 @media only screen and (min-width: 1060px){
     #info{
