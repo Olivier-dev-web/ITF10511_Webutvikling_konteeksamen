@@ -1144,10 +1144,12 @@ body{
         }
         
         .fa-heart{
+            position: absolute;
             top: 175px;
         }
 
         .fa-images{
+            position: absolute;
             top: 650px;
         }
 
@@ -1188,6 +1190,10 @@ body{
                 grid-row: 3/4;
             }
         }
+    }
+
+    #nav-overview #blue-font{
+        padding-left: 1rem;
     }
 
 }
