@@ -998,12 +998,25 @@ body{
 
 
 
-/*------------------------MediaQ----------------------------------------------*/
+/*------------------------MediaQuerries----------------------------------------------*/
 
 @media only screen and (min-width: 780px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #global-top{
+        max-width: 1400px;
+        width: 100%;
 
         flex-direction: column;
+
+        #logo-mobile-view{
+            display: none;
+        }
 
         #mobile{
             display: none;
@@ -1024,10 +1037,7 @@ body{
 
         .under-top{
             display: flex;
-
-            :first-child{
-                align-self: ;
-            }
+            width: 100%;
         }
 /*---------------------------------------*/
         .top{
@@ -1036,12 +1046,29 @@ body{
                 display: flex;
                 align-items: center;
 
+                :first-child{
+                    border: none;
+                    padding: 0;
+                    border-radius: 0;
+                    gap: 0;
+
+                    a{
+                        color: #000000;
+                    }
+                }
+
                 li{
-                    border: 3px solid #5ea0bd;
+                    border: 3px solid #1ca2c1;
                     padding: .5rem;
                     border-radius: 39px;
                     gap: 1rem;
                     display: flex;
+
+                    a{
+                        text-decoration: none;
+                        color: #1ca2c1;
+                        font-weight: bold;
+                    }
                 }
             }
         }
