@@ -247,6 +247,7 @@ body{
     grid-template-rows: auto ;
     background-color: #252525;
     color: #ffffff;
+    width: 100%;
 }
 
 
