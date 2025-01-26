@@ -1019,6 +1019,11 @@ body{
     .room-card{
         max-width: 300px;
     }
+
+
+    #info{
+        justify-content: space-around;
+    }
 }
 
 
@@ -1229,6 +1234,12 @@ body{
 
 @media only screen and (min-width: 780px){
     
+}
+
+@media only screen and (min-width: 1060px){
+    #info{
+        justify-content: space-between;
+    }
 }
 
 
