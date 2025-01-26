@@ -1038,6 +1038,11 @@ body{
         .under-top{
             display: flex;
             width: 100%;
+
+            ul li a{
+                font-weight: bold;
+                text-decoration: none;
+            }
         }
 /*---------------------------------------*/
         .top{
