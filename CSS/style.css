@@ -120,12 +120,15 @@ body{
     background-image: url(../img/holiday-2733322_1280.jpg);
     background-size: cover;
     border-radius: 10px;
+    justify-content: center;
 
     article{
         margin: 1rem;
         padding: 2rem;
         background-color: #52d3f0;
         border-radius: 0px 20px 0px 20px;
+        max-width: 425px;
+        align-self: end;
 
         p{
             margin: 0;
@@ -990,23 +993,86 @@ body{
 
 
 
-/* Color Theme Swatches in Hex */
+
+
+
+
+
+/*------------------------MediaQ----------------------------------------------*/
+
+@media only screen and (min-width: 780px){
+    #global-top{
+
+        flex-direction: column;
+
+        #mobile{
+            display: none;
+        }
+
+        .desktop{
+            display: block;
+
+            align-self: end;
+
+            ul{
+                display: flex;
+                font-size: 1rem;
+                list-style: none;
+                gap: 1rem;
+            }
+        }
+
+        .under-top{
+            display: flex;
+
+            :first-child{
+                align-self: ;
+            }
+        }
+/*---------------------------------------*/
+        .top{
+            
+            ul{
+                display: flex;
+                align-items: center;
+
+                li{
+                    border: 3px solid #5ea0bd;
+                    padding: .5rem;
+                    border-radius: 39px;
+                    gap: 1rem;
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/*
 .Svart-2-hex { color: #000000; }
 
-/* Color Theme Swatches in Hex */
+
 .greige-2-hex { color: #F6F5F2; }
 
-/* Color Theme Swatches in Hex */
+
 .grønn-2-hex { color: #019101; }
 
-/* Color Theme Swatches in Hex */
+
 .lys-grå-2-hex { color: #E8E8E8; }
 
-/* Color Theme Swatches in Hex */
+
 .mørk-grå-2-hex { color: #252525; }
 
-/* Color Theme Swatches in Hex */
+
 .mørk-turkis-2-hex { color: #1CA2C1; }
 
-/* Color Theme Swatches in Hex */
+
 .lys-turkis-2-hex { color: #52D3F0; }
+*/
