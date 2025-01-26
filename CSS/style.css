@@ -1000,6 +1000,17 @@ body{
 
 /*------------------------MediaQuerries----------------------------------------------*/
 
+
+@media only screen and (min-width: 650px){
+    #todays-deal{
+        height: 400px;
+    }
+}
+
+
+
+
+
 @media only screen and (min-width: 780px){
 
     body{
@@ -1078,7 +1089,18 @@ body{
             }
         }
     }
+
+
+
+    #todays-deal{
+        height: 500px;
+    }
+
+
+
 }
+
+
 
 
 
