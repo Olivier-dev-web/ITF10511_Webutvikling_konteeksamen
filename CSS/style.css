@@ -438,6 +438,89 @@ body{
         display: none;
     }
 
+    #grid-photo-gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        
+        #hjerte{
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            display: flex;
+            justify-content: end;
+
+            li{
+                z-index: 1;
+                list-style: none;
+
+                .fa-heart{
+                    background-color: #ffffff;
+                    padding: 0.6rem;
+                    margin-right: 1rem;
+                    border-radius: 50px;
+                    font-size: 1rem;
+                    color: #ff0000;
+                }
+            }
+        }
+
+        #piler{
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            padding: 0;
+            align-items: center;
+            margin: 0;
+
+            li{
+                z-index: 1;
+
+                .fa-circle-chevron-left{
+                    font-size: 2rem;
+                    background-color: #fff;
+                    border-radius: 25px;
+                    opacity: 0.5;
+                    margin-left: 1rem;
+                }
+
+                .fa-circle-chevron-right{
+                    font-size: 2rem;
+                    background-color: #fff;
+                    border-radius: 25px;
+                    opacity: 0.5;
+                    margin-right: 1rem;
+                }
+            }
+        }
+
+        #bilde-album{
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            margin: 0;
+
+            li{
+                z-index: 1;
+                list-style: none;
+                padding: .5rem;
+                margin: 1rem;
+                background-color: #252525;
+                border-radius: 50px;
+                color: #ffffff;
+            }
+        }
+
+        .scroll-container{
+            grid-column: 1 / 2;
+            grid-row: 1 / 4;
+        }
+    }
+
 
     .scroll-container{
         display: flex;
@@ -448,7 +531,7 @@ body{
         padding: 0;
         gap: 0;
 
-        .fa-heart{
+        /*.fa-heart{
             position: absolute;
             top: 145px;
             right: 10px;
@@ -489,7 +572,7 @@ body{
             border-radius: 25px;
             opacity: 0.8;
             padding: 0.5rem;
-        }
+        }*/
 
         
         figure{
@@ -700,6 +783,11 @@ body{
     .room-card{
         border-radius: 10px;
         box-shadow: 0 0 5px rgb(160, 160, 160);
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+        min-width: 250px;
+        max-width: 400px;
 
         img{
             border-radius: 10px 10px 0 0;
@@ -1021,9 +1109,9 @@ body{
     }
 
 
-    #info{
+    /*#info{
         justify-content: space-around;
-    }
+    }*/
 }
 
 
@@ -1167,22 +1255,8 @@ body{
 
     #photo-gallery{
 
-        .fa-circle-chevron-left{
+        #piler li{
             display: none;
-        }
-
-        .fa-circle-chevron-right{
-            display: none;
-        }
-        
-        .fa-heart{
-            position: absolute;
-            top: 175px;
-        }
-
-        .fa-images{
-            position: absolute;
-            top: 650px;
         }
 
 
@@ -1226,6 +1300,16 @@ body{
 
     #nav-overview #blue-font{
         padding-left: 1rem;
+    }
+
+    #availability .room-card{
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgb(160, 160, 160);
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+        min-width: 250px;
+        max-width: 312px;
     }
 
 
