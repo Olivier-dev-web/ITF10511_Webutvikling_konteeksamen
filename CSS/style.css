@@ -76,7 +76,7 @@ body{
 #header-grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 5rem;
 
     #banner{
         grid-column: 1/2;
@@ -88,6 +88,7 @@ body{
         
         background: url(../img/beach-from-top.jpg);
         background-size: cover;
+        background-position: bottom;
     }
         
     #order-form{
@@ -102,8 +103,13 @@ body{
         #order-from-index{
             background-color: rgb(255, 255, 255);
             margin: 1rem;
-            padding: 0.5rem;
+            padding: 1rem;
             border-radius: 10px;
+            box-shadow: 0 0 5px #a0a0a0;
+
+            nav{
+                display: flex;
+            }
             
             .scroll-container{
                 display: flex;
@@ -113,13 +119,20 @@ body{
                 white-space: nowrap; /*egenskapen fant jeg ut av ved cowboy-koding, gjorde at */
                 padding: 1rem;
                 margin: 0;
-                gap: 1rem;
+                gap: 1.5rem;
                 list-style: none;
 
+                .blue-underscore{
+                    border-bottom: 3px solid;
+                    padding-bottom: 1rem;
+                    color: #1ca2c1;
+                }
+
+                li{
+                    z-index: 1;
+                }
+
                 a{
-                    display: flex;
-                    flex-direction: column;
-                    padding: 1rem;
                     text-decoration: none;
                     color: black;
                 }
@@ -132,10 +145,20 @@ body{
                 justify-content: end;
                 align-items: center;
                 padding: 0;
-                position: relative;
-                top: -60px;
+                position: absolute;
+                top: 250px;
                 right: 44px;
                 margin: 0;
+
+                li{
+                    z-index: 2;
+
+                    i{
+                        background-color: #ffffff8a;
+                        padding: 1rem;
+                        border-radius: 50px;
+                    }
+                }
             }
             
             label{
@@ -220,7 +243,7 @@ body{
    flex-direction: column;
    padding: 1rem;
    border-radius: 10px;
-   box-shadow: 0 0 5px rgb(160, 160, 160); /*Hentet fra W3 - https://www.w3schools.com/css/css3_shadows_box.asp*/
+   box-shadow: 0 0 5px #a0a0a0; /*Hentet fra W3 - https://www.w3schools.com/css/css3_shadows_box.asp*/
 
    a{
     text-decoration: none;
@@ -244,7 +267,7 @@ body{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    box-shadow: 0 0 5px rgb(160, 160, 160);
+    box-shadow: 0 0 5px #a0a0a0;
     justify-content: space-between;
     flex-grow: 1;
     flex-shrink: 1;
@@ -832,7 +855,7 @@ body{
 
     .room-card{
         border-radius: 10px;
-        box-shadow: 0 0 5px rgb(160, 160, 160);
+        box-shadow: 0 0 5px #a0a0a0;
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 0;
@@ -965,7 +988,7 @@ body{
         margin: 1rem;
         padding: 1rem;
         border-radius: 10px;
-        box-shadow: 0 0 5px rgb(160, 160, 160);
+        box-shadow: 0 0 5px #a0a0a0;
 
         img{
             width: 100%;
@@ -1174,7 +1197,7 @@ body{
     #global-top{
         max-width: 1400px;
         width: 100%;
-        box-shadow: 0 0 5px gray;
+        box-shadow: 0 0 5px #a0a0a0;
         padding-bottom: 0;
 
         flex-direction: column;
@@ -1352,7 +1375,7 @@ body{
 
     #availability .room-card{
         border-radius: 10px;
-        box-shadow: 0 0 5px rgb(160, 160, 160);
+        box-shadow: 0 0 5px #a0a0a0;
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 0;
@@ -1389,7 +1412,7 @@ body{
                 display: block;
                 padding: 1rem;
                 margin-top: 1rem;
-                box-shadow: 0 0 5px rgb(160, 160, 160);
+                box-shadow: 0 0 5px a0a0a0;
                 border-radius: 10px;
 
                 img{
