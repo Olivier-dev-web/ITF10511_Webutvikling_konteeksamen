@@ -1128,6 +1128,8 @@ body{
     #global-top{
         max-width: 1400px;
         width: 100%;
+        box-shadow: 0 0 5px gray;
+        padding-bottom: 0;
 
         flex-direction: column;
 
@@ -1321,6 +1323,8 @@ body{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         padding: 1rem;
+        max-width: 1000px;
+        padding-top: 0;
 
         nav{
             grid-column: 1/3;
