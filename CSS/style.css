@@ -707,6 +707,7 @@ body{
         #blue-font{
             color: #1ca2c1;
             font-weight: bold;
+            padding-left: 1rem;
         }
 
     }
@@ -1385,9 +1386,7 @@ body{
         }
     }
 
-    #nav-overview #blue-font{
-        padding-left: 1rem;
-    }
+    
 
     #availability .room-card{
         border-radius: 10px;
