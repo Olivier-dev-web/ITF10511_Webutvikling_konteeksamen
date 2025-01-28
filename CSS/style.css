@@ -41,6 +41,38 @@ body{
     }
 }
 
+/* prøver grid areas 
+#header-grid-container{
+    display: grid;
+    grid-template-areas:
+    "banner"
+    "banner"
+    "form"
+    "form";
+    grid-t
+}
+
+#banner{
+    grid-area: banner;
+    background: url(../img/beach-from-top.jpg);
+    background-size: cover;
+
+    h2{
+        display: none;
+    }
+}
+
+#order-form{
+    grid-area: form;
+
+    h2{
+        display: none;
+    }
+}
+
+ slutt på grid areas  */
+
+
 #header-grid-container{
     display: grid;
     grid-template-columns: 1fr;
@@ -61,6 +93,7 @@ body{
     #order-form{
         grid-column: 1/2;
         grid-row: 3/5;
+        width: 100vw;
         
         h2{
             display: none;
@@ -77,9 +110,11 @@ body{
                 flex-direction: row;
                 flex-wrap: nowrap;
                 overflow: scroll;
-                white-space: nowrap; /*egenskapen fant jeg ut av ved cowboy-koding*/
+                white-space: nowrap; /*egenskapen fant jeg ut av ved cowboy-koding, gjorde at */
                 padding: 1rem;
+                margin: 0;
                 gap: 1rem;
+                list-style: none;
 
                 a{
                     display: flex;
@@ -88,8 +123,19 @@ body{
                     text-decoration: none;
                     color: black;
                 }
-
                 
+            }
+
+            #pil-i-skjema{
+                list-style: none;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                padding: 0;
+                position: relative;
+                top: -60px;
+                right: 44px;
+                margin: 0;
             }
             
             label{
