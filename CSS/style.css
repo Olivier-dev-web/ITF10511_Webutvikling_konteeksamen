@@ -114,9 +114,17 @@ body{
 
             #input-seksjon{
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
                 gap: 1rem;
                 
+                .whole-width{
+                    width: 100%;
+                }
+                .half-width{
+                    width: 46%;
+                }
             }
             
             .scroll-container{
