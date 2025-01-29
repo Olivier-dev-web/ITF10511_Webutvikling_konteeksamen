@@ -41,37 +41,6 @@ body{
     }
 }
 
-/* prøver grid areas 
-#header-grid-container{
-    display: grid;
-    grid-template-areas:
-    "banner"
-    "banner"
-    "form"
-    "form";
-    grid-t
-}
-
-#banner{
-    grid-area: banner;
-    background: url(../img/beach-from-top.jpg);
-    background-size: cover;
-
-    h2{
-        display: none;
-    }
-}
-
-#order-form{
-    grid-area: form;
-
-    h2{
-        display: none;
-    }
-}
-
- slutt på grid areas  */
-
 
 #header-grid-container{
     display: grid;
@@ -122,6 +91,7 @@ body{
                 .whole-width{
                     width: 100%;
                 }
+                
                 .half-width{
                     width: 46%;
                 }
@@ -1181,6 +1151,13 @@ body{
 
 
 @media only screen and (min-width: 650px){
+
+    #pil-i-skjema li{
+        display: none;
+    }
+
+    
+
     #todays-deal{
         height: 400px;
     }
@@ -1208,7 +1185,7 @@ body{
     body{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
     }
 
     #global-top{
@@ -1281,6 +1258,15 @@ body{
                     }
                 }
             }
+        }
+    }
+
+    #order-form{
+        display: flex;
+        justify-content: center;
+
+        #order-from-index{
+            max-width: 1000px;
         }
     }
 
@@ -1439,9 +1425,53 @@ body{
         #person-info{
             grid-column: 1/2;
             grid-row: 2/4;
+
         }
     }
 
+}
+
+@media only screen and (min-width: 865px){
+
+    /*#input-seksjon{
+        flex-direction: row !important; /*mediaquerrien ville ikke overstyre css fra mobilversonen, muligens pga nesting og lite spesifisert her.*/
+        /*flex-wrap: nowrap !important;
+        font-size: .5rem;
+    
+        .whole-width legend{
+            font-size: 0.8rem;
+        }
+
+        .half-width{
+            width: 60%;
+    
+            legend{
+                font-size: 0.8rem;
+            }
+        }
+            
+    }*/
+
+    #header-grid-container #order-form #order-from-index #input-seksjon{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: .5rem;
+    
+        .whole-width legend{
+            font-size: 0.9rem;
+        }
+
+        .half-width{
+            width: 60%;
+    
+            legend{
+                font-size: 0.9rem;
+            }
+        }
+    }
+        
+            
+       
 }
 
 
