@@ -1182,10 +1182,35 @@ body{
 
 @media only screen and (min-width: 780px){
 
+    
+
+}
+
+@media only screen and (min-width: 865px){
+
+    /*#input-seksjon{
+        flex-direction: row !important; /*mediaquerrien ville ikke overstyre css fra mobilversonen, muligens pga nesting og lite spesifisert her.*/
+        /*flex-wrap: nowrap !important;
+        font-size: .5rem;
+    
+        .whole-width legend{
+            font-size: 0.8rem;
+        }
+
+        .half-width{
+            width: 60%;
+    
+            legend{
+                font-size: 0.8rem;
+            }
+        }
+            
+    }*/
+
     body{
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
+        align-items: center;
     }
 
     #global-top{
@@ -1261,13 +1286,41 @@ body{
         }
     }
 
+    #header-grid-container{
+        max-width: 1400px;
+        width: 100%;
+
+        #banner{
+            max-width: 1400px;
+        }
+    }
+
     #order-form{
         display: flex;
         justify-content: center;
+        max-width: 1400px;
 
         #order-from-index{
             max-width: 1000px;
         }
+    }
+
+    main{
+        padding: 1rem;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+        .scroll-container{
+            justify-content: space-between;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+    #todays-deal{
+        margin: 1rem;
     }
 
 
@@ -1276,11 +1329,17 @@ body{
         height: 500px;
     }
 
+    #bunn{
+        max-width: 1400px;
+    }
+
  /*-------------------------hotell siden--------------------------*/
     #header-grid-container-hotell{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, auto);
+        padding-top: 0;
+        padding-bottom: 0;
 
         #header-hotell{
             grid-column: 1/3;
@@ -1429,28 +1488,11 @@ body{
         }
     }
 
-}
-
-@media only screen and (min-width: 865px){
-
-    /*#input-seksjon{
-        flex-direction: row !important; /*mediaquerrien ville ikke overstyre css fra mobilversonen, muligens pga nesting og lite spesifisert her.*/
-        /*flex-wrap: nowrap !important;
-        font-size: .5rem;
-    
-        .whole-width legend{
-            font-size: 0.8rem;
-        }
-
-        .half-width{
-            width: 60%;
-    
-            legend{
-                font-size: 0.8rem;
-            }
-        }
-            
-    }*/
+    #order-form{
+        grid-column: 1/2;
+        grid-row: 3/5;
+        margin-bottom: 1rem;
+    }
 
     #header-grid-container #order-form #order-from-index #input-seksjon{
         flex-direction: row;
@@ -1470,11 +1512,13 @@ body{
         }
     }
         
-            
        
 }
 
+@media only screen and (min-width: 910px){
 
+    
+}
 
 @media only screen and (min-width: 1060px){
     #info{
