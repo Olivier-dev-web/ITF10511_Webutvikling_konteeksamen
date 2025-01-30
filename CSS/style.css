@@ -234,6 +234,7 @@ body{
    a{
     text-decoration: none;
     color: #52d3f0;
+    font-weight: 500;
    }
 
 }
@@ -1303,6 +1304,10 @@ body{
         #order-from-index{
             max-width: 1000px;
         }
+
+        #order-from-index .scroll-container{
+            scrollbar-width: none; /*scrollbar i chrome vises, men ikke i mozilla ved desktop. Så fjerner det med denne egenskapen.*/
+        }
     }
 
     main{
@@ -1316,6 +1321,7 @@ body{
             justify-content: space-between;
             padding-top: 1rem;
             padding-bottom: 1rem;
+            scrollbar-width: none; /*Samme greie her også, ønsker ikke at scrollbaren skal synes på desktop da det ikke er behov for det.*/
         }
     }
 
