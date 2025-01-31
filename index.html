@@ -233,19 +233,19 @@
             </figure>
         </section>
         <div id="info">
-            <section id="payment-method">
-                <h3>BETALINGSMETODER</h3>
+            <section id="payment-method" itemscope itemtype="http://schema.org/PaymentMethod">
+                <h3 itemprop="name">BETALINGSMETODER</h3>
                 <ul class="list-style-delete">
-                    <li><i class="fa-brands fa-cc-visa" title="visa"></i></li>
-                    <li><i class="fa-brands fa-cc-mastercard" title="mastercard"></i></li>
-                    <li><i class="fa-brands fa-cc-paypal" title="paypal"></i></li>
-                    <li><i class="fa-brands fa-cc-apple-pay" title="applepay"></i></li>
-                    <li><i class="fa-brands fa-cc-amazon-pay" title="amazonpay"></i></li>
+                    <li itemprop="paymentMethod"><i class="fa-brands fa-cc-visa" title="visa"></i></li>
+                    <li itemprop="paymentMethod"><i class="fa-brands fa-cc-mastercard" title="mastercard"></i></li>
+                    <li itemprop="paymentMethod"><i class="fa-brands fa-cc-paypal" title="paypal"></i></li>
+                    <li itemprop="paymentMethod"><i class="fa-brands fa-cc-apple-pay" title="applepay"></i></li>
+                    <li itemprop="paymentMethod"><i class="fa-brands fa-cc-amazon-pay" title="amazonpay"></i></li>
                 </ul>
             </section>
             <section id="notification">
                 <h3>NYHETER & TILBUD</h3>
-                <form action="/submit-form">
+                <form action="/submit-form" autocomplete="on">
                     <fieldset>
                         <legend>Meld deg på nyhetsbrev her</legend>
                         <label for="epost">
@@ -263,7 +263,7 @@
                     <li><a href="#">Spørsmål og Svar</a></li>
                     <li><a href="#">Chat</a></li>
                     <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Tilgjengelighets-erklæring</a></li>
+                    <li><a href="/WCAG-sjekkliste  av tilgjengelighetserklæring for nettløsning 24.01.2024.xlsx" target="_blank">Tilgjengelighets-erklæring</a></li>
                 </ul>
             </section>
             <section id="some">
