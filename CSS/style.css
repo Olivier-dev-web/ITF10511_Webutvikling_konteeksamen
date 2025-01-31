@@ -396,7 +396,7 @@ body{
         border-radius: 5px;
         border: none;
         padding: 0.5rem;
-        background-color: #ffd33c;
+        background-color: #ffd411;
         font-weight: bold;
     }
 
@@ -651,7 +651,7 @@ body{
         display: flex;
         flex-direction: row;
         gap: 0.5rem;
-        color: #ffda58;
+        color: #ffd411;
     }
 
     p{
@@ -963,7 +963,7 @@ body{
     gap: .5rem;
     list-style: none;
     font-size: 1.5rem;
-    color: #ffda58;
+    color: #ffd411;
 }
 
 .overview-with-icons{
@@ -1005,7 +1005,7 @@ body{
     button{
         padding: 1rem;
         width: 120px;
-        background-color: #ffd33c;
+        background-color: #ffd411;
         border: none;
         border-radius: 5px;
         font-weight: bold;
